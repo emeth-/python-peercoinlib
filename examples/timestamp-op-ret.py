@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # Copyright (C) 2014 The python-bitcoinlib developers
 #
 # This file is part of python-bitcoinlib.
@@ -13,11 +11,7 @@
 
 """Example of timestamping a file via OP_RETURN"""
 
-import sys
-if sys.version_info.major < 3:
-    sys.stderr.write('Sorry, Python 3.x required by this example.\n')
-    sys.exit(1)
-
+from __future__ import print_function
 import hashlib
 import bitcoin.rpc
 import sys
